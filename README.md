@@ -4,3 +4,6 @@
     * header 2Depth까지 완료
     * hero_bnr 완료
     * new container 작업중
+* js
+    * header on 완료
+    * hero_bnr slide 완료
