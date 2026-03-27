@@ -1,0 +1,54 @@
+/* =============================================== main */
+#wrap main {}
+/* ================================================ hero_bnr */
+#wrap main .hero_wrap {}
+#wrap main .hero_wrap .hero_bnr {
+    height:calc(100vh - 35px);
+}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt{}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt p {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt h1 {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr1_.jpg);}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/hero_bnr2_.jpg);}
+#wrap main .hero_wrap .hero_bnr .pg {bottom:38px; top:auto; width:calc(100% - 500px); left:50%; transform: translateX(-50%); background-color: rgba(255,255,255,0.4);}
+#wrap main .hero_wrap .hero_bnr .pg .swiper-pagination-progressbar-fill {background-color: rgba(0, 45, 112,0.5);}
+/* ===================================================== 공통 */
+#wrap main .container {}
+#wrap main .container .title {font-size: 2.5rem;}
+#wrap main .container .all_view {font-size: 0.94rem;}
+#wrap main .container .contents {}
+#wrap main .container .contents .product {}
+#wrap main .container .contents .product .price {}
+#wrap main .container .contents .product .price span {}
+#wrap main .container .contents .product .price del {}
+#wrap main .container .contents .product .price em {}
+/* ===================================================== new */
+#wrap main .new {}
+#wrap main .new .title_wrap {
+    padding: 150px 120px 0 ;
+    display: flex; justify-content: space-between;
+}
+#wrap main .new .title_wrap .title {}
+#wrap main .new .title_wrap .all_view {}
+#wrap main .new .title_wrap .all_view img {}
+#wrap main .new .new_bnr {}
+#wrap main .new .new_bnr .new_txt {}
+#wrap main .new .new_bnr .new_txt h1 {}
+#wrap main .new .new_bnr .new_txt p {}
+#wrap main .new .list {}
+#wrap main .new .list .product {}
+#wrap main .new .list .product a {}
+#wrap main .new .list .product a img {}
+#wrap main .new .list .product .product_txt {}
+#wrap main .new .list .product .product_txt h1 {}
+#wrap main .new .list .product .product_txt p {}
+#wrap main .new .list .product .product_txt .price {}
+#wrap main .new .list .product .product_txt .price span {}
+#wrap main .new .list .product .product_txt .price del {}
+#wrap main .new .list .product .product_txt .price em {}
+#wrap main .new .list .product1 {}
+#wrap main .new .list .product2 {}
+#wrap main .new .list .product3 {}

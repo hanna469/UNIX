@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>UNIX</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 개별 사용자 디자인 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 띠배너 -->
+        <div class="top_bnr">
+            <a href="#" class="top_txt">유닉스 카톡 플친 추가하면 적립금 쿠폰 100% 지급!</a>
+            <!-- 백그라운드 이미지로 삽입해서 계속 돌아가게 작성 -->
+            <a href="#"><img src="./images/common/ico_close.png" alt="닫기"></a>
+        </div>
+        <!-- 플로팅버튼 -->
+        <!-- <div class="fab_btn">
+            <button type="button" class="top_btn"><img src="" alt=""></button>
+            <button type="button" class="talk_btn"><img src="" alt=""></button>
+        </div> -->
+        <header>
+            <h1><a href="#"><img src="./images/common/logo_white.png" alt="UNIX"></a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">MD PICK</a></li>
+                    <li>
+                        <a href="#">에어샷</a>
+                        <div class="gnb_2depth">
+                            <div class="gnb_2depth_left">
+                                <dl>
+                                    <dt>에어샷</dt>
+                                    <dd><a href="#">에어샷 랩모션</a></dd>
+                                    <dd><a href="#">에어샷 듀얼모션</a></dd>
+                                    <dd><a href="#">에어샷 T</a></dd>
+                                    <dd><a href="#">에어샷 U</a></dd>
+                                    <dd><a href="#">에어샷</a></dd>
+                                </dl>
+                                <a href="#">제품 비교하기</a>
+                            </div>
+                            <div class="gnb_2depth_right">
+                                <div class="best">
+                                    <a href="#"><video src="./video/header_best.mp4" autoplay muted loop></video></a>
+                                    <p>Best</p>
+                                </div>
+                                <div class="event">
+                                    <a href="#"><img src="./images/event.jpg" alt="event"></a>
+                                    <p>이벤트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">드라이어</a>
+                        <div class="gnb_2depth">
+                            <div class="gnb_2depth_left">
+                                <dl>
+                                    <dt>드라이어</dt>
+                                    <dd><a href="#">BLDC</a></dd>
+                                    <dd><a href="#">전문가용</a></dd>
+                                    <dd><a href="#">고정식</a></dd>
+                                    <dd><a href="#">접이식</a></dd>
+                                    <dd><a href="#">헤어스타일러</a></dd>
+                                </dl>
+                                <a href="#">제품 비교하기</a>
+                            </div>
+                            <div class="gnb_2depth_right">
+                                <div class="best">
+                                    <a href="#"><video src="./video/header_best.mp4" autoplay muted loop></video></a>
+                                    <p>Best</p>
+                                </div>
+                                <div class="event">
+                                    <a href="#"><img src="./images/event.jpg" alt="event"></a>
+                                    <p>이벤트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">고데기</a>
+                        <div class="gnb_2depth">
+                            <div class="gnb_2depth_left">
+                                <dl>
+                                    <dt>고데기</dt>
+                                    <dd><a href="#">판고데기</a></dd>
+                                    <dd><a href="#">봉고데기</a></dd>
+                                    <dd><a href="#">미니고데기</a></dd>
+                                    <dd><a href="#">물결/멀티/브러시</a></dd>
+                                    <dd><a href="#">헤어롤</a></dd>
+                                </dl>
+                                <a href="#">제품 비교하기</a>
+                            </div>
+                            <div class="gnb_2depth_right">
+                                <div class="best">
+                                    <a href="#"><video src="./video/header_best.mp4" autoplay muted loop></video></a>
+                                    <p>Best</p>
+                                </div>
+                                <div class="event">
+                                    <a href="#"><img src="./images/event.jpg" alt="event"></a>
+                                    <p>이벤트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">액세서리/가전</a>
+                        <div class="gnb_2depth">
+                            <div class="gnb_2depth_left">
+                                <dl class="accessory">
+                                    <dt>액세서리</dt>
+                                    <dd><a href="#">스타일링</a></dd>
+                                    <dd><a href="#">소품</a></dd>
+                                    <dd><a href="#">거치대</a></dd>
+                                </dl>
+                                <dl class="appliance">
+                                    <dt>가전</dt>
+                                    <dd><a href="#">뷰티가전</a></dd>
+                                    <dd><a href="#">소형가전</a></dd>
+                                </dl>
+                                <a href="#">제품 비교하기</a>
+                            </div>
+                            <div class="gnb_2depth_right">
+                                <div class="best">
+                                    <a href="#"><video src="./video/header_best.mp4" autoplay muted loop></video></a>
+                                    <p>Best</p>
+                                </div>
+                                <div class="event">
+                                    <a href="#"><img src="./images/event.jpg" alt="event"></a>
+                                    <p>이벤트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">프로페셔널</a>
+                        <div class="gnb_2depth">
+                            <div class="gnb_2depth_left">
+                                <dl>
+                                    <dt>프로페셔널</dt>
+                                    <dd><a href="#">드라이어</a></dd>
+                                    <dd><a href="#">고데기</a></dd>
+                                    <dd><a href="#">액세서리</a></dd>
+                                    <dd><a href="#">앰배서더</a></dd>
+                                </dl>
+                                <a href="#">제품 비교하기</a>
+                            </div>
+                            <div class="gnb_2depth_right">
+                                <div class="best">
+                                    <a href="#"><video src="./video/header_best.mp4" autoplay muted loop></video></a>
+                                    <p>Best</p>
+                                </div>
+                                <div class="event">
+                                    <a href="#"><img src="./images/event.jpg" alt="event"></a>
+                                    <p>이벤트</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">고객케어</a></li> <!-- 뎁스정리 필요 -->
+                    <li><a href="#">커뮤니티</a></li> <!-- 뎁스정리 필요 -->
+                </ul>
+            </nav>
+            <ul id="user_menu">
+                <li><a href="#"><img src="./images/common/search_w.png" alt="검색"></a></li> <!-- 검색창 필요 -->
+                <li><a href="#"><img src="./images/common/mypage_w.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="./images/common/cart_w.png" alt="장바구니"></a></li>
+            </ul>
+        </header>
+        <!-- ================================================================= e.header -->
+        <main>
+            <div class="hero_wrap">
+                <div class="swiper hero_bnr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#"></a>
+                            <div class="hero_txt">
+                                <p>AIR SPEEDER NEO</p>
+                                <h1>감각을 앞선 바람<br>에어스피더네오</h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#"><img src="#" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination pg"></div>
+                </div>
+            </div>
+            <div class="container new">
+                <div class="title_wrap">
+                    <h1 class="title">NEW</h1>
+                    <a href="#" class="all_view">전체보기 <img src="#" alt=""></a>
+                </div>
+                <a href="#" class="new_bnr">
+                    <div class="new_txt">
+                        <h1>여행용 헤어드라이어의<br>모든 조건을 갖추다</h1>
+                        <p>디오 폴드로 프리볼트의 편리함을 전 세계 어디서나 경험해 보세요.</p>
+                    </div>
+                </a>
+                <div class="contents list">
+                    <div class="product product1">
+                        <a href="#"><img src="#" alt=""></a>
+                        <div class="product_txt">
+                            <h1>디오 폴드 프리볼트 BLDC 드라이어(크림베이지)</h1>
+                            <p>UN-A9300B</p>
+                            <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                        </div>
+                    </div>
+                    <div class="product product2">
+                        <a href="#"><img src="#" alt=""></a>
+                        <div class="product_txt">
+                        <h1>디오 폴드 프리볼트 BLDC 드라이어(헤이즈블루)</h1>
+                        <p>UN-A9320B</p>
+                        <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                        </div>
+                    </div>
+                    <div class="product product3">
+                        <a href="#"><img src="#" alt=""></a>
+                        <div class="product_txt">
+                        <h1>디오 폴드 프리볼트 드라이기+배럴 세트(크림베이지)</h1>
+                        <p>UN-A9300B+UN-A9300BRI</p>
+                        <p class="price"><span>20%</span><del>199,000</del><em>￦159,000</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container best">
+                <h1 class="title">BEST</h1>
+                <div class="contents_wrap">
+                    <div class="swiper best_list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="best_img">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <p>플라즈마 이온이 선사하는 수분 코팅,<br>손상 걱정 없는 데일리 헤어 케어</p>
+                                </div>
+                                <div class="product product1">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>에어샷 랩모션 플라즈마 스타일러&드라이어</h1>
+                                    <p>UN-W3971</p>
+                                    <p class="price"><span>20%</span><del>249,000</del><em>￦199,000</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product2">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>에어샷 듀얼모션 드라이어&스타일러</h1>
+                                    <p>UN-D1970</p>
+                                    <p class="price"><em>￦379,000</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product3">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>에어샷T 플라즈마 드라이어(화이트)</h1>
+                                    <p>UN-T1991</p>
+                                    <p class="price"><span>12%</span><del>249,000</del><em>￦219,000</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="best_img">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <p>유닉스는 건강한 바람을 연구합니다.<br>>차원이 다른 바람을 경험하세요.</p>
+                                </div>
+                                <div class="product product1">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>디오 폴드 프리볼트 하이스피드BLDC</h1>
+                                    <p>UN-A9300B</p>
+                                    <p class="price"><span>20%</span><del>149,900</del><em>￦119,900</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product2">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>디오 폴드 프리볼트 BLDC 드라이어(헤이즈블루)</h1>
+                                    <p>UN-A9320B</p>
+                                    <p class="price"><span>19%</span><del>149,000</del><em>￦119,900</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product3">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>[3/13 입고예정] 에어스피더 네오 BLDC 드라이어</h1>
+                                    <p>UN-A7621</p>
+                                    <p class="out_stock">품절</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="best_img">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <p>Hair, Care, Styling<br>건강한 스타일링을 제안합니다.</p>
+                                </div>
+                                <div class="product product1">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>내추럴 프리볼트 34mm 물결 웨이브 고데기</h1>
+                                    <p>UCI-A3434</p>
+                                    <p class="price"><span>20%</span><del>70,000</del><em>￦56,000</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product2">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>이지매직 디지털 판고데기</h1>
+                                    <p>UCI-A2530</p>
+                                    <p class="price"><span>20%</span><del>43,000</del><em>￦34,400</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product3">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>[4월 입고예정] 글램 웨이브 40mm 봉고데기</h1>
+                                    <p>UCI-A4140</p>
+                                    <p class="out_stock">품절</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <div class="best_img">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <p>스타일링을 완성하는 최적의 도구,<br>이제 일상의 디테일도 놓치지 마세요.</p>
+                                </div>
+                                <div class="product product1">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>쿠션 헤어 브러시</h1>
+                                    <p>UB-3000</p>
+                                    <p class="price"><em>￦22,000</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product2">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>미니 캐리어 백</h1>
+                                    <p>UN-3970BAG</p>
+                                    <p class="price"><span>10%</span><del>40,000</del><em>￦36,000</em></p>
+                                    </div>
+                                </div>
+                                <div class="product product3">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <div class="product_txt">
+                                    <h1>디오 폴드 스타일링 배럴 40mm</h1>
+                                    <p>UN-A9300BRI40</p>
+                                    <p class="price"><span>10%</span><del>50,000</del><em>￦45,000</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                </div>
+            </div>
+            <div class="container brand">
+                <h1 class="title">BRAND</h1>
+                <a href="#"><iframe src="" frameborder="0"></iframe></a>
+            </div>
+            <div class="container style">
+                <h1 class="title">STYLE LIBRARY</h1>
+                <div class="style_bg">
+                    <p><img src="#" alt=""></p>
+                    <div class="style_right">
+                        <p class="style_title">유닉스가 제안하는 헤어스타일 솔루션<br><em>STYLE LIBRARY</em></p>
+                        <p>유닉스와 헤어 디자이너가 함께 제안하는<br>나의 얼굴형에 가장 어울리는 스타일을 찾아보세요.</p>
+                        <p class="find_style"><a href="#">더 많은 헤어스타일 만나러 가기<img src="#" alt=""></a></p>
+                        <div class="swiper style_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="container discover">
+                <div class="title_wrap">
+                    <h1 class="title">DISCOVER</h1>
+                    <a href="#" class="all_view">전체보기 <img src="#" alt=""></a>
+                </div>
+                <div class="contents_wrap">
+                    <div class="swiper discover_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="contents_left">
+                                    <p><img src="#" alt=""></p>
+                                    <h2>일상을 바꾸는 새로운 드라이 경험</h2>
+                                    <p>빠른 건조와 스타일링, 모발 건강을 생각한 케어까지 매일의 헤어 루틴을 섬세하게</p>
+                                </div>
+                                <div class="contents_right">
+                                    <div class="product product1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>디오 폴드 프리볼트 BLDC 드라이어(크림베이지)</h1>
+                                            <p>UN-A9300B</p>
+                                            <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="product product2">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>디오 폴드 프리볼트 BLDC 드라이어(크림베이지)</h1>
+                                            <p>UN-A9300B</p>
+                                            <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="product product3">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>디오 폴드 프리볼트 BLDC 드라이어(크림베이지)</h1>
+                                            <p>UN-A9300B</p>
+                                            <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="product product4">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>디오 폴드 프리볼트 BLDC 드라이어(크림베이지)</h1>
+                                            <p>UN-A9300B</p>
+                                            <p class="price"><span>20%</span><del>149,000</del><em>￦119,900</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="contents_left">
+                                    <p><img src="#" alt=""></p>
+                                    <h2>건조함에 지친 두피와 모발을 위한 케어 솔루션</h2>
+                                    <p>부스스함, 정전기가 신경쓰이는 계절, 유닉스 플라즈마 수분 케어로 윤기 있는 모발을</p>
+                                </div>
+                                <div class="contents_right">
+                                    <div class="product product1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>에어샷 랩모션 플라즈마 스타일러&드라이어</h1>
+                                            <p>UN-W3971</p>
+                                            <p class="price"><span>20%</span><del>249,000</del><em>￦199,900</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="product product2">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>에어샷 듀얼모션 드라이어&스타일러</h1>
+                                            <p>UN-D1970</p>
+                                            <p class="price"><em>￦379,000</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="product product3">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>에어샷T 플라즈마 드라이어(화이트)</h1>
+                                            <p>UN-A7300N</p>
+                                            <p class="price"><span>12%</span><del>249,000</del><em>￦219,000</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="contents_left">
+                                    <p><img src="#" alt=""></p>
+                                    <h2>정밀함이 만든 시술의 완성</h2>
+                                    <p>정밀한 설계, 완벽한 퍼포먼스. 전문가가 선택한 유닉스 프로페셔널</p>
+                                </div>
+                                <div class="contents_right">
+                                    <div class="product product1">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>마스터 S 고데기</h1>
+                                            <p>UCI-A9525</p>
+                                        </div>
+                                    </div>
+                                    <div class="product product2">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>마스터 디오 드라이어</h1>
+                                            <p>UN-A9500</p>
+                                        </div>
+                                    </div>
+                                    <div class="product product3">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>에어샷T 플라즈마 드라이어(블랙)</h1>
+                                            <p>UN-T1990</p>
+                                        </div>
+                                    </div>
+                                    <div class="product product4">
+                                        <a href="#"><img src="#" alt=""></a>
+                                        <div class="product_txt">
+                                            <h1>에어샷 듀얼모션 드라이어&스타일러</h1>
+                                            <p>UN-D1970</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="container location">
+                    <h1 class="title">LOCATION</h1>
+                <div class="contents">
+                    <div class="contents_left">
+                        <div class="map_list list1">
+                            <div class="list_left">
+                                <h1>(주)유닉스 서울 AS센터</h1>
+                                <p>서울시 용산구 원효로 252 유닉스 빌딩 B1층<img src="#" alt=""></p>
+                                <p class="visitor">해당고객:서울/경기에 거주하는 고객</p>
+                            </div>
+                            <p>위치보기 <img src="#" alt=""></p>
+                        </div>
+                        <div class="map_list list2">
+                            <div class="list_left">
+                                <h1>(주)유닉스 김포 AS센터</h1>
+                                <p>경기도 김포시 양촌읍 황금로 89번길 80<img src="#" alt=""></p>
+                                <p class="visitor">해당고객:강원/인천에 거주하는 고객</p>
+                            </div>
+                            <p>위치보기 <img src="#" alt=""></p>
+                        </div>
+                        <div class="map_list list3">
+                            <div class="list_left">
+                                <h1>(주)유닉스 부산 AS센터</h1>
+                                <p>부산시 수영구 연수로 374-1 예가빌딩 2층<img src="#" alt=""></p>
+                                <p class="visitor">해당고객:그 외 지역에 거주하는 고객</p>
+                            </div>
+                            <p>위치보기 <img src="#" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="contents_right"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="top_line">
+                <dl>
+                    <dt>고객 케어</dt>
+                    <dd>공지사항</dd>
+                    <dd>자주 묻는 질문</dd>
+                    <dd>1:1문의</dd>
+                    <dd>AS 안내</dd>
+                </dl>
+                <dl>
+                    <dt>법적 고지</dt>
+                    <dd>이용 약관</dd>
+                    <dd>개인정보처리방침</dd>
+                    <dd>회사소개</dd>
+                </dl>
+                <dl>
+                    <dt>소셜 미디어</dt>
+                    <dd><img src="#" alt="instargram"></dd>
+                    <dd><img src="#" alt="youtube"></dd>
+                    <dd><img src="#" alt="naverblog"></dd>
+                </dl>
+            </div>
+            <div class="btm_line">
+                <img src="#" alt="">
+                <address> <span>주식회사 유닉스 | 경기 김포시 양촌읍 황금로89번길 80 (주)유닉스 | 대표자 : 이충구</span><span> | 사업자등록번호 : 139-81-10047 | 통신판매신고번호 : 2020-경기김포-1161
+[사업자정보확인]</span>제품 / 유닉스 샵 문의 : 1577-0569 | 비즈니스제휴 문의 : marketing@unix-elec.co.kr | 이메일 주소 무단 수집 거부 | 호스팅 서비스 제공자 : 카페24(주)</address>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
