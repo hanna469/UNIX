@@ -8,9 +8,9 @@
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper {}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a {}
-#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt{}
-#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt p {}
-#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt h1 {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .hero_txt{position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .hero_txt p {color: #fff; font-weight: 500; line-height: 1.2; text-align: right;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .hero_txt h1 {color: #fff; font-size: 2.38rem; font-weight: 700; line-height: 1.3; text-align: center;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr1_.jpg);}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/hero_bnr2_.jpg);}
 #wrap main .hero_wrap .hero_bnr .pg {bottom:38px; top:auto; width:calc(100% - 500px); left:50%; transform: translateX(-50%); background-color: rgba(255,255,255,0.4);}
@@ -33,8 +33,8 @@
 }
 #wrap main .new .title_wrap .title {}
 #wrap main .new .title_wrap .all_view {}
-#wrap main .new .title_wrap .all_view img {}
-#wrap main .new .new_bnr {}
+#wrap main .new .title_wrap .all_view img {width:100%;}
+#wrap main .new .new_bnr {background-image: url(../images/);}
 #wrap main .new .new_bnr .new_txt {}
 #wrap main .new .new_bnr .new_txt h1 {}
 #wrap main .new .new_bnr .new_txt p {}
