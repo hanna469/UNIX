@@ -7,3 +7,11 @@
 * js
     * header on 완료
     * hero_bnr slide 완료
+# 26.04.06 (2:20 ~ 6:15 4h30m)
+* html 일부 수정
+* css
+    * header 완성
+    * new 완료
+    * best 작업중
+* js
+    * header 동적기능 완료
