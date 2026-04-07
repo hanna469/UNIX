@@ -6,7 +6,7 @@ form,fieldset,legend,input,button,select,option,textarea,
 em,strong,sub,sup,br,span,del,s,q,mark,code,img,a,
 table,thead,tbody,tfoot,tr,td,th {
     margin:0; padding:0; box-sizing:border-box;
-    line-height:1; /* 피그마 행간 100% == 1 */
+    line-height:1.2; /* 피그마 행간 100% == 1 */
     letter-spacing:0em; /* 피그마 자간 -2% == -0.02em */
     word-spacing:0;
     font-size:1em; /* 피그마 글자 크기 16px == 1em */

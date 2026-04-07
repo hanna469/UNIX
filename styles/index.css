@@ -13,10 +13,10 @@
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .hero_txt h1 {color: #fff; font-size: 2.38rem; font-weight: 700; line-height: 1.3; text-align: center;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr1_.jpg);}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/hero_bnr2_.jpg);}
-#wrap main .hero_wrap .hero_bnr .pg {bottom:38px; top:auto; width:calc(100% - 500px); left:50%; transform: translateX(-50%); background-color: rgba(255,255,255,0.4);}
+#wrap main .hero_wrap .hero_bnr .pg {bottom:38px; top:auto; width:calc(100% - 500px); left:50%; transform: translateX(-50%); background-color: rgba(255,255,255,0.4); height:2px;}
 #wrap main .hero_wrap .hero_bnr .pg .swiper-pagination-progressbar-fill {background-color: rgba(0, 45, 112,0.5);}
-/* ==================================================================================================== 공통 */
-#wrap main .container {margin: 100px 120px;}
+/* ============================================================================================================= 공통(new~location) */
+#wrap main .container {margin: 200px 120px 0 120px;}
 #wrap main .container .title {font-size: 2.5rem;}
 #wrap main .container .all_view {font-size: 0.94rem; display: flex; align-items: center; gap:15px;}
 #wrap main .container .all_view img {width:16px;}
@@ -27,12 +27,15 @@
 #wrap main .container .contents_wrap .product .product_txt {}
 #wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem;}
 #wrap main .container .contents_wrap .product .product_txt p {font-size: 0.75rem;}
-#wrap main .container .contents_wrap .product .product_txt .price {font-size: 1rem; display: flex; gap:10px; align-items: center;}
-#wrap main .container .contents_wrap .product .product_txt .price span {color: #002D72; font-weight: 500;}
-#wrap main .container .contents_wrap .product .product_txt .price del {font-size: 0.75rem; color:#c3c3c3;}
-#wrap main .container .contents_wrap .product .product_txt .price em {font-weight: 500;}
+#wrap main .container .contents_wrap .product .product_txt .price_wrap {font-size: 1rem; display: flex; gap:10px; align-items: center;}
+#wrap main .container .contents_wrap .product .product_txt .price_wrap .sale {color: #002D72; font-weight: 500;}
+#wrap main .container .contents_wrap .product .product_txt .price_wrap .cost {font-size: 0.75rem; color:#c3c3c3;}
+#wrap main .container .contents_wrap .product .product_txt .price_wrap .pay {font-weight: 500;}
+#wrap main .container .contents_wrap .product .product_txt .out_stock {
+    font-size: 0.94rem; color:#fff; background-color: #c3c3c3; padding: 3px 10px; width: max-content; border-radius: 5px;
+}
 /* ======================================================================================== new */
-#wrap main .new {margin: 150px 120px 100px;}
+#wrap main .new {margin: 150px 120px 0;}
 #wrap main .new .title_wrap {
     margin: 0 0 20px ;
     display: flex; justify-content: space-between;
@@ -48,7 +51,7 @@
 #wrap main .new .new_bnr video {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .new .new_bnr .new_txt {position: absolute; left: 50px; bottom:50px;}
 #wrap main .new .new_bnr .new_txt > * {color: #fff;}
-#wrap main .new .new_bnr .new_txt h1 {font-size: 2.38rem; font-weight: 700;}
+#wrap main .new .new_bnr .new_txt h1 {font-size: 2.38rem; font-weight: 700; line-height: 1.3; margin-bottom: 10px;}
 #wrap main .new .new_bnr .new_txt p {font-weight: 500;}
 #wrap main .new .contents_wrap {
     display: flex;
@@ -68,39 +71,61 @@
 #wrap main .new .contents_wrap .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
 #wrap main .new .contents_wrap .product .product_txt h1 {font-size: 0.94em; width:100%; margin-bottom: 15px;}
 #wrap main .new .contents_wrap .product .product_txt p {font-size: 0.69em;}
-#wrap main .new .contents_wrap .product .product_txt .price {}
-#wrap main .new .contents_wrap .product .product_txt .price span {}
-#wrap main .new .contents_wrap .product .product_txt .price del {}
-#wrap main .new .contents_wrap .product .product_txt .price em {}
+#wrap main .new .contents_wrap .product .product_txt .price_wrap {}
+#wrap main .new .contents_wrap .product .product_txt .price_wrap .sale {}
+#wrap main .new .contents_wrap .product .product_txt .price_wrap .cost {}
+#wrap main .new .contents_wrap .product .product_txt .price_wrap .pay {}
 #wrap main .new .contents_wrap .product1 {}
 #wrap main .new .contents_wrap .product2 {}
 #wrap main .new .contents_wrap .product3 {}
-#wrap main .best {}
-#wrap main .best .title {}
+/* ======================================================================================== best */
+#wrap main .best {position: relative;}
+#wrap main .best .title {margin: 0 0 20px;}
 #wrap main .best .contents_wrap {}
 #wrap main .best .contents_wrap .best_list {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .slide1 {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a img {width:100%;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img p {font-weight: 500;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img {margin: 0 0 55px;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a {display:block; height: 430px; margin: 0 0 20px; }
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a img {height:100%; width:100%; object-fit: cover;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img p {font-weight: 500; line-height: 1.5;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     gap:20px;
+    margin: 0 0 60px;
+    position: relative;
+    border: #f00;
+}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product:not(:last-child)::after {
+    content: ''; width: 504px; height: 1px; background-color: #d9d9d9;
+    position: absolute; left:0; bottom:-30px;
 }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product1 {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product a {
-}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product a img {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt {
-}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product a {height:190px;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product a img {width: 100%; height: 100%; object-fit: cover;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt {position: relative;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt h1 {
     width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 10px;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt p {width: 100%;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price {justify-content: flex-end; margin-top: auto;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price span {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price del {}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price em {}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt p {}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap {
+    justify-content: flex-end; position: absolute; bottom:0; width:100%;}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap .sale {}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap .cost {}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap .pay {}
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .out_stock {position: absolute; bottom:0; right: 0;}
+#wrap main .best .contents_wrap .prev {
+    top:38px; bottom:auto;
+    right: 61px; left:auto;
+    width:16px; height: 16px;
+}
+#wrap main .best .contents_wrap .next {
+    top:38px; bottom:auto;
+    right: 10px; left:auto;
+    width:16px; height: 16px;
+}
+#wrap main .best .contents_wrap .best_pg {
+    top:15.5px; bottom:auto;
+    text-align: right; padding: 0 36px 0 0;
+}
