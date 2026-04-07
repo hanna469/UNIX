@@ -116,16 +116,19 @@
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap .pay {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .out_stock {position: absolute; bottom:0; right: 0;}
 #wrap main .best .contents_wrap .prev {
-    top:38px; bottom:auto;
+    top:40px; bottom:auto;
     right: 61px; left:auto;
     width:16px; height: 16px;
 }
+#wrap main .best .contents_wrap .prev svg,
+#wrap main .best .contents_wrap .next svg {color:#000;}
 #wrap main .best .contents_wrap .next {
-    top:38px; bottom:auto;
+    top:40px; bottom:auto;
     right: 10px; left:auto;
     width:16px; height: 16px;
 }
 #wrap main .best .contents_wrap .best_pg {
     top:15.5px; bottom:auto;
-    text-align: right; padding: 0 36px 0 0;
+    width: max-content;
+    right: 36px; left: auto;
 }

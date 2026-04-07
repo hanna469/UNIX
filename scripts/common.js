@@ -14,8 +14,8 @@ const bestSwiper = new Swiper(bestBnr,{ //베스트 슬라이드
     spaceBetween: 84,
     autoplay:{delay:3000,},
     navigation:{
-        nextEl:'best_list ~ .next',
-        prevEl:'best_list ~ .prev',
+        nextEl:'.best_list ~ .next',
+        prevEl:'.best_list ~ .prev',
     },
     pagination:{
         el: '.best_list ~ .best_pg',
