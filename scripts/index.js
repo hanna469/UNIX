@@ -5,7 +5,7 @@ const bestSwiper = new Swiper(bestBnr,{ //베스트 슬라이드
     loop:true,
     slidesPerView:3,
     spaceBetween: 84,
-    autoplay:{delay:3000,},
+    // autoplay:{delay:3000,},
     navigation:{
         nextEl:'.best_list ~ .next',
         prevEl:'.best_list ~ .prev',
