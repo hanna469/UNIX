@@ -1,8 +1,20 @@
 /* 1440px ~ pc */
 /* 820px ~ 1439px tablet */
 @media screen and (max-width:1439px) {
-
-    
+    /* #wrap header {
+    display: flex; justify-content: space-between; align-items: center;
+    position: sticky; top:0; z-index: 999;
+    padding: 0 30px; height: 90px;
+    margin-bottom: -90px;
+}
+#wrap header h1 {width:130px;}
+#wrap header h1 a {}
+#wrap header h1 a img {width: 100%;}
+#wrap header nav {}
+#wrap header nav .gnb {display: flex;}
+#wrap header nav .gnb li {}
+#wrap header nav .gnb li > a {display: inline-block; padding: 35.5px 39.5px; color: #fff; font-weight: 500; transition: 0.3s;}
+     */
 }
 /* ~ 819px mobile */
 @media screen and (max-width:819px){

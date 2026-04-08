@@ -7,9 +7,7 @@ const mNav = mHeaderBg.querySelector('#m_nav'); // 모바일용 헤더
 const gnbUl = document.querySelector('nav .gnb'); 
 const gnbClone = gnbUl.cloneNode(true); //gnbUl 복제
 
-mNav.appendChild(gnbClone);
-
-
+mNav.appendChild(gnbClone); //mNav 자식으로 gnbClone 삽입
 
 fabTopBtn.addEventListener('click',function(e){ //플로팅버튼-맨 위로 가기
     e.preventDefault();
