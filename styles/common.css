@@ -126,12 +126,14 @@
 /* ====================================================================== 모바일 메뉴 클릭 시 열리는 메뉴 */
 #wrap header #m_header_bg {
     position: absolute; left:0; top:90px;
-    background: rgba(255,255,255,0.5); width: 100%; height: 100vh;}
+    background: rgba(255,255,255,0.5); width: 100%; height: 100vh;
+    display: none;
+}
 #wrap header #m_header_bg #m_header {
     background-color: #fff; height:70%;
     position: relative; padding: 0 35px;
 }
-#wrap header #m_header_bg #m_header .member {display: flex; flex-flow: row nowrap; height: 38px; align-items: center;}
+#wrap header #m_header_bg #m_header .member {display: flex; flex-flow: row nowrap; height: 38px; align-items: center; padding:10px 0;}
 #wrap header #m_header_bg #m_header .member a {font-size: 0.88rem;}
 #wrap header #m_header_bg #m_header .member a:first-child::after {
     content: ''; display: inline-block; width: 1px; height: 6px; background-color: #656568;
@@ -149,7 +151,7 @@
 #wrap header #m_header_bg #m_nav .gnb li > a {font-weight: 500; line-height: 50px; width:89px;}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth {display: flex; align-items: center;}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left {}
-#wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl {display: flex; justify-content: flex-end; align-items: center; gap:9px}
+#wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl {display: flex; justify-content: flex-end; align-items: center; gap:12px}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl dt {display: none;}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl dd {width:100px; font-size: 0.88rem; text-align: right;}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl dd a {}
@@ -167,14 +169,17 @@
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_right .event a {}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_right .event a img {}
 #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_right .event p {}
-#wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .sub_prod_wrap {display: flex; gap:9px;}
-
+#wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .sub_prod_wrap {display: flex; gap:12px;} /* 엑세서리+가전 탭용 */
 #wrap header #m_header_bg #m_nav .gnb .gnb_pro {margin: 0 0 30px 0; position: relative;}
+/* 프로페셔널 ~ 고객케어 사이 구분선 */
 #wrap header #m_header_bg #m_nav .gnb .gnb_pro::after {
     content: ''; display: block; width:100%; height: 1px;
     background-color: #c3c3c3; position: absolute; bottom:-15px;
 }
-#wrap header #m_header_bg #m_nav .gnb .gnb_pro .gnb_2depth .gnb_2depth_left .compare {display: block; position: absolute; right: 0; bottom:0;}
+/* 모바일메뉴 제품비교 버튼 */
+#wrap header #m_header_bg #m_nav .gnb .gnb_pro .gnb_2depth .gnb_2depth_left .compare {
+    display: block; position: absolute; right: 0; bottom:0; font-size: 0.88rem;
+}
 /* #wrap header #m_header_bg #m_nav .compare {position: absolute; right: 0; bottom:0;} */
 /* ================================================================================= header.on */
 #wrap header.on {background-color: #fff;}

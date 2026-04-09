@@ -6,6 +6,16 @@ const mHeaderBg = document.querySelector('#m_header_bg'); // 모바일용 헤더
 const mNav = mHeaderBg.querySelector('#m_nav'); // 모바일용 헤더
 const gnbUl = document.querySelector('nav .gnb'); 
 const gnbClone = gnbUl.cloneNode(true); //gnbUl 복제
+const mNavOpen = document.querySelector('#user_menu .m_nav_open'); //모바일 메뉴 열기
+const mNavClose = mHeaderBg.querySelector('.close');
+
+mNavOpen.addEventListener('click', function(){
+    header.classList.add('on');
+    mHeaderBg.style.display = 'block';
+})
+mNavClose.addEventListener('click',function(){
+    mHeaderBg.style.display = 'none';
+})
 
 mNav.appendChild(gnbClone); //mNav 자식으로 gnbClone 삽입
 
