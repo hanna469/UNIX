@@ -135,7 +135,7 @@
 }
 /* =========================================================================== brand */
 #wrap main .brand {margin: 200px 0;}
-#wrap main .brand .title {}
+#wrap main .brand .title {margin: 0 120px 20px;}
 #wrap main .brand .brand_bnr {display: block; width:100%; height: 447px; position: relative;}
 #wrap main .brand .brand_bnr video {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .brand .brand_bnr .brand_txt {position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
@@ -144,7 +144,7 @@
 #wrap main .brand .brand_bnr .brand_txt p {font-size: 1.25rem; font-weight: 500;}
 /* ================================================================== stylr library */
 #wrap main .style {margin: 200px 0;}
-#wrap main .style .title {}
+#wrap main .style .title {margin: 0 120px 20px;}
 #wrap main .style .style_bg {
     height: 839px; padding: 59px 50px;
     background-image: url(../images/style_blur.jpg); background-attachment: fixed;
@@ -161,17 +161,15 @@
 }
 #wrap main .style .style_bg .left_photo {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     flex:1;
-    border: 2px solid red;
     background-image: url(../images/style_box.jpg);
     background-position: center; background-size: cover;
 }
 #wrap main .style .style_bg .left_photo,
 #wrap main .style .style_bg .style_right {position: relative; z-index: 200;}
-#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: space-between; border: 2px solid red;}
-#wrap main .style .style_bg .style_right .style_txt {border: 2px solid red; margin-top: 181px;}
+#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: space-between; gap:78px;}
+#wrap main .style .style_bg .style_right .style_txt {margin-top: 130px;}
 #wrap main .style .style_bg .style_right .style_txt > * {color:#fff; }
 #wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
 #wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 700; line-height: 1.5; margin: 0 0 50px;}
@@ -179,7 +177,7 @@
 #wrap main .style .style_bg .style_right .style_txt .find_style {}
 #wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
 #wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
-#wrap main .style .style_bg .style_right .style_list {border: 2px solid blue; max-width:848px; height: 256px;}
+#wrap main .style .style_bg .style_right .style_list {max-width:848px; height: 256px;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper {}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide a {}
@@ -188,4 +186,40 @@
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide3 {background-image: url(../images/clayard.jpg);}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide4 {background-image: url(../images/natural_s.jpg);}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide5 {background-image: url(../images/clayard.jpg);}
-/*  */
+/* ================================================================================================== discover */
+#wrap main .discover {}
+#wrap main .discover .title_wrap {}
+#wrap main .discover .title_wrap .title {}
+#wrap main .discover .title_wrap .all_view {}
+#wrap main .discover .title_wrap .all_view img {}
+#wrap main .discover .contents_wrap {}
+#wrap main .discover .contents_wrap .discover_list {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide {display: flex;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo img {width: 100%;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left h2 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left p:last-child {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a img {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 p {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .sale {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .cost {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .pay {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product1 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product2 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product3 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product4 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide1 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide2 {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide3 {}
