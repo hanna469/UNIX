@@ -146,47 +146,46 @@
 #wrap main .style {margin: 200px 0;}
 #wrap main .style .title {}
 #wrap main .style .style_bg {
+    height: 839px; padding: 59px 50px;
+    background-image: url(../images/style_blur.jpg); background-attachment: fixed;
+    background-position: center; background-size: cover;
     position: relative;
-    height: 839px;
+    display: flex; gap:82px; justify-content: center; align-items: center;
+    
     /* height: max-content; */
-    background-image: url(../images/style_blur.jpg); background-attachment: fixed; background-position: center; background-size: cover;
 }
 #wrap main .style .style_bg::before {
     content: ''; display: block; width: 100%; height: 100%;
     background: rgba(0,0,0,0.25);
     position: absolute; left:0; top:0; z-index: 100;
 }
-#wrap main .style .style_contents {
-    display: flex; align-items: flex-end;
-    z-index: 200; position: relative;
-    height: 100%; padding: 63px 0;
+#wrap main .style .style_bg .left_photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    flex:1;
+    border: 2px solid red;
+    background-image: url(../images/style_box.jpg);
+    background-position: center; background-size: cover;
 }
-#wrap main .style .style_contents > p {
-    /* width: 736px; height: 714px; */
-    width: 50%; padding: 0 82px 0 102px;
-    /* max-width: 736px; */
-}
-#wrap main .style .style_contents > p img {width: 100%;}
-#wrap main .style .style_contents .style_right {
-    background-color: yellowgreen;
-    width: 50%;
-    display: flex; flex-flow: column nowrap;
-    justify-content: flex-end; align-content: center; gap:72px;}
-#wrap main .style .style_contents .style_right .style_txt {/* margin: 181px 0 75px 0; */}
-#wrap main .style .style_contents .style_right .style_txt p {color:#fff; margin-bottom: 50px;}
-#wrap main .style .style_contents .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500;}
-#wrap main .style .style_contents .style_right .style_txt .style_title em {color:#fff; font-size: 1.75rem; font-weight: 700;}
-#wrap main .style .style_contents .style_right .style_txt p:nth-child(2) {font-size: 1.25rem;}
-#wrap main .style .style_contents .style_right .style_txt .find_style {margin-bottom: 0;}
-#wrap main .style .style_contents .style_right .style_txt .find_style > a {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
-#wrap main .style .style_contents .style_right .style_txt .find_style > a img {width: 16px;}
-#wrap main .style .style_contents .style_right .style_list {width:100%;}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .swiper-slide {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .swiper-slide a {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .swiper-slide a img {width:100%;}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .slide1 {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .slide2 {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .slide3 {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .slide4 {}
-#wrap main .style .style_contents .style_right .style_list .swiper-wrapper .slide5 {}
+#wrap main .style .style_bg .left_photo,
+#wrap main .style .style_bg .style_right {position: relative; z-index: 200;}
+#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: space-between; border: 2px solid red;}
+#wrap main .style .style_bg .style_right .style_txt {border: 2px solid red; margin-top: 181px;}
+#wrap main .style .style_bg .style_right .style_txt > * {color:#fff; }
+#wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
+#wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 700; line-height: 1.5; margin: 0 0 50px;}
+#wrap main .style .style_bg .style_right .style_txt p:nth-child(3) {font-size: 1.25rem; margin: 0 0 50px;}
+#wrap main .style .style_bg .style_right .style_txt .find_style {}
+#wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
+#wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
+#wrap main .style .style_bg .style_right .style_list {border: 2px solid blue; max-width:848px; height: 256px;}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper {}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide a {}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide1 {background-image: url(../images/natural_s.jpg);}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide2 {background-image: url(../images/clayard.jpg);}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide3 {background-image: url(../images/clayard.jpg);}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide4 {background-image: url(../images/natural_s.jpg);}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide5 {background-image: url(../images/clayard.jpg);}
+/*  */
