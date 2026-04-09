@@ -9,12 +9,13 @@ const gnbClone = gnbUl.cloneNode(true); //gnbUl 복제
 const mNavOpen = document.querySelector('#user_menu .m_nav_open'); //모바일 메뉴 열기
 const mNavClose = mHeaderBg.querySelector('.close');
 
-mNavOpen.addEventListener('click', function(){
-    header.classList.add('on');
+mNavOpen.addEventListener('click', function(){ //모바일 메뉴 열기
+    header.classList.add('on','m_open'); //마우스오버,스크롤 상황에서 스타일 유지하도록 모바일 클래스 추가
     mHeaderBg.style.display = 'block';
 })
-mNavClose.addEventListener('click',function(){
+mNavClose.addEventListener('click',function(){ //모바일 메뉴 닫기
     mHeaderBg.style.display = 'none';
+    header.classList.remove('m_open');
 })
 
 mNav.appendChild(gnbClone); //mNav 자식으로 gnbClone 삽입
@@ -49,11 +50,14 @@ header.addEventListener('mouseover',function(){//헤더 마우스오버
     header.classList.add('on');
 });
 header.addEventListener('mouseout',function(){
-    if(window.scrollY <= 5){header.classList.remove('on');}
+    if(window.scrollY > 5 || !header.classList.contains('m_open')){
+    } else {
+        header.classList.remove('on');
+    }
 });
 
 window.addEventListener('scroll',function(){ //헤더 스크롤
-    if (window.scrollY > 5) {
+    if (window.scrollY > 5 || header.classList.contains('m_open')) {
         header.classList.add('on');
     } else {
         header.classList.remove('on');

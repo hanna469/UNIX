@@ -1,5 +1,12 @@
 const heroBnr = document.querySelector('.hero_bnr'); //히어로배너슬라이드
 const bestBnr = document.querySelector('.best_list'); //베스트탭슬라이드
+const styleList = document.querySelector('.style_list'); //스타일탭슬라이드
+
+const styleSwiper = new Swiper(styleList,{
+    loop:true,
+    slidesPerView:3,
+    spaceBetween:40,
+})
 
 const bestSwiper = new Swiper(bestBnr,{ //베스트 슬라이드
     loop:true,
@@ -25,7 +32,7 @@ const bestSwiper = new Swiper(bestBnr,{ //베스트 슬라이드
 
 const heroSwiper = new Swiper(heroBnr,{ //히어로배너 슬라이드
     loop:true,
-    autoplay:{delay:5000,},
+    // autoplay:{delay:5000,},
     pagination: {
         el: '.hero_bnr .pg',
         type: 'progressbar',

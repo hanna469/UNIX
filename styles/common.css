@@ -117,11 +117,11 @@
 #wrap header nav .gnb li .gnb_2depth .gnb_2depth_right .best a video,
 #wrap header nav .gnb li .gnb_2depth .gnb_2depth_right .event a img {height:100%; width:100%; object-fit: cover; display: block;}
 /* =============================================== user_menu */
-#wrap header #user_menu {display: flex; align-items: center;}
-#wrap header #user_menu li {padding: 0 5px;}
+#wrap header #user_menu {display: flex; align-items: center; gap:8px;}
+#wrap header #user_menu li {}
 #wrap header #user_menu li a {display: block; width:24px; height: 24px;}
 #wrap header #user_menu li a img {width:100%;}
-#wrap header #user_menu .m_nav_open {/* display: none; */}
+#wrap header #user_menu .m_nav_open {display: none;}
 #wrap header #user_menu .m_nav_open a {transform: translateY(4px);}
 /* ====================================================================== 모바일 메뉴 클릭 시 열리는 메뉴 */
 #wrap header #m_header_bg {
@@ -130,8 +130,8 @@
     display: none;
 }
 #wrap header #m_header_bg #m_header {
-    background-color: #fff; height:70%;
-    position: relative; padding: 0 35px;
+    background-color: #fff; height:70%; padding: 0 35px;
+    position: relative; 
 }
 #wrap header #m_header_bg #m_header .member {display: flex; flex-flow: row nowrap; height: 38px; align-items: center; padding:10px 0;}
 #wrap header #m_header_bg #m_header .member a {font-size: 0.88rem;}
