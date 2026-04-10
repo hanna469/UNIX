@@ -25,7 +25,22 @@
     <div id="wrap">
         <!-- 띠배너 -->
         <div class="top_bnr">
-            <a href="#" class="top_txt">유닉스 카톡 플친 추가하면 적립금 쿠폰 100% 지급!</a>
+            <div class="swiper topbnr_txt">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="top_txt">유닉스 카톡 플친 추가하면 적립금 쿠폰 100% 지급!</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="top_txt">유닉스 공식몰 회원 전용 특별 혜택 보러가기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="top_txt">3월 회원전용 한정특가! 가입하면 즉시 구매 가능</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="top_txt">유닉스 공식몰 회원은 전 상품 무료배송</a>
+                    </div>
+                </div>
+            </div>
             <!-- 백그라운드 이미지로 삽입해서 계속 돌아가게 작성 -->
             <a href="#" class="close"><img src="./images/common/ico_close.png" alt="닫기"></a>
         </div>
@@ -395,6 +410,7 @@
                     <div class="swiper-pagination best_pg"></div>
                 </div>
             </div>
+            <!-- 브랜드 컨텐츠 -->
             <div class="container brand">
                 <h1 class="title">BRAND</h1>
                 <a href="#" class="brand_bnr">
@@ -405,6 +421,7 @@
                     </div>
                 </a>
             </div>
+            <!-- 스타일 컨텐츠 -->
             <div class="container style">
                 <h1 class="title">STYLE LIBRARY</h1>
                 <div class="style_bg">
@@ -438,6 +455,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 디스커버 컨텐츠 -->
             <div class="container discover">
                 <div class="title_wrap">
                     <h1 class="title">DISCOVER</h1>
@@ -559,42 +577,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination pg"></div>
                 </div>
             </div>
+            <!-- 로케이션 컨텐츠 -->
             <div class="container location">
-                    <h1 class="title">LOCATION</h1>
+                <h1 class="title">LOCATION</h1>
                 <div class="contents">
                     <div class="contents_left">
                         <div class="map_list list1">
                             <div class="list_left">
                                 <h1>(주)유닉스 서울 AS센터</h1>
-                                <p>서울시 용산구 원효로 252 유닉스 빌딩 B1층<img src="#" alt=""></p>
+                                <p>서울시 용산구 원효로 252 유닉스 빌딩 B1층<img src="./images/common/Map.png" alt=""></p>
                                 <p class="visitor">해당고객:서울/경기에 거주하는 고객</p>
                             </div>
-                            <p>위치보기<img src="#" alt=""></p>
+                            <button type="button" class="show_loc active">위치보기<img src="./images/common/next-button.png" alt=""></button>
                         </div>
                         <div class="map_list list2">
                             <div class="list_left">
                                 <h1>(주)유닉스 김포 AS센터</h1>
-                                <p>경기도 김포시 양촌읍 황금로 89번길 80<img src="#" alt=""></p>
+                                <p>경기도 김포시 양촌읍 황금로 89번길 80<img src="./images/common/Map.png" alt=""></p>
                                 <p class="visitor">해당고객:강원/인천에 거주하는 고객</p>
                             </div>
-                            <p>위치보기<img src="#" alt=""></p>
+                            <button type="button" class="show_loc">위치보기<img src="./images/common/next-button.png" alt=""></button>
                         </div>
                         <div class="map_list list3">
                             <div class="list_left">
                                 <h1>(주)유닉스 부산 AS센터</h1>
-                                <p>부산시 수영구 연수로 374-1 예가빌딩 2층<img src="#" alt=""></p>
+                                <p>부산시 수영구 연수로 374-1 예가빌딩 2층<img src="./images/common/Map.png" alt=""></p>
                                 <p class="visitor">해당고객:그 외 지역에 거주하는 고객</p>
                             </div>
-                            <p>위치보기<img src="#" alt=""></p>
+                            <button type="button" class="show_loc">위치보기<img src="./images/common/next-button.png" alt=""></button>
                         </div>
                     </div>
-                    <div class="contents_right"></div>
+                    <div class="contents_right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.639355045447!2d126.96739338514207!3d37.53999787605045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca213751c7947%3A0x5ae8e8f22f9a4681!2zKOyjvCnsnKDri4nsiqQg7ISc7Jq47KeA7KCQ!5e0!3m2!1sko!2skr!4v1775798553428!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
         </main>
+        <!-- ================================================================= e.main -->
         <footer>
             <div class="top_line">
                 <dl class="f_support">
@@ -612,15 +632,15 @@
                 </dl>
                 <dl class="f_sns">
                     <dt>소셜 미디어</dt>
-                    <dd><a href="#"><img src="#" alt="instargram"></a></dd>
-                    <dd><a href="#"><img src="#" alt="youtube"></a></dd>
-                    <dd><a href="#"><img src="#" alt="naverblog"></a></dd>
+                    <dd><a href="#"><img src="./images/common/instar.png" alt="instargram"></a></dd>
+                    <dd><a href="#"><img src="./images/common/youtube.png" alt="youtube"></a></dd>
+                    <dd><a href="#"><img src="./images/common/naver.png" alt="naverblog"></a></dd>
                 </dl>
             </div>
             <div class="btm_line">
                 <p>&copy;2025 UNIX</p>
-                <address> <span>주식회사 유닉스 | 경기 김포시 양촌읍 황금로89번길 80 (주)유닉스 | 대표자 : 이충구</span><span> | 사업자등록번호 : 139-81-10047 | 통신판매신고번호 : 2020-경기김포-1161
-[사업자정보확인]</span>제품 / 유닉스 샵 문의 : 1577-0569 | 비즈니스제휴 문의 : marketing@unix-elec.co.kr | 이메일 주소 무단 수집 거부 | 호스팅 서비스 제공자 : 카페24(주)</address>
+                <address>주식회사 유닉스 | 경기 김포시 양촌읍 황금로89번길 80 (주)유닉스 | 대표자 : 이충구 | 사업자등록번호 : 139-81-10047 | 통신판매신고번호 : 2020-경기김포-1161
+[사업자정보확인] | 제품 / 유닉스 샵 문의 : 1577-0569 | 비즈니스제휴 문의 : marketing@unix-elec.co.kr | 이메일 주소 무단 수집 거부 | 호스팅 서비스 제공자 : 카페24(주)</address>
             </div>
         </footer>
     </div>

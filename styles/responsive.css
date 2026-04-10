@@ -1,5 +1,6 @@
 /* (or 1240px)1440px ~ pc */
-/* 820px ~ 1439px tablet */
+/* 1240 ~ 1439 */
+/* 820px ~ 1239px tablet */
 @media screen and (max-width:1439px) {
     /* #wrap header {
     display: flex; justify-content: space-between; align-items: center;

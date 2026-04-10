@@ -6,7 +6,11 @@
     display: flex; justify-content: center; align-items: center;
     position: relative;
 }
-#wrap .top_bnr .top_txt {color:#fff; font-size: 0.75rem; line-height: 35px; width:calc(max-content+20px); padding: 0 20px;}
+#wrap .top_bnr .topbnr_txt {width: calc(100% - 200px);}
+#wrap .top_bnr .topbnr_txt .swiper-wrapper {transition-timing-function: linear}
+#wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide {}
+#wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide {width: max-content;}
+#wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide .top_txt {color:#fff; font-size: 0.75rem; line-height: 35px;}
 #wrap .top_bnr .close {width:35px; position:absolute; right:0; top:50%; transform: translateY(-48%); height: 100%;}
 #wrap .top_bnr .close img {width: 100%;}
 /* =============================== fab_btn(플로팅버튼) */
@@ -43,6 +47,7 @@
     position: absolute; left:0;
     width:100%;
     background-color: #fff;
+    border-bottom: 1px solid #c3c3c3;
     display: none;
 }
 #wrap header nav .gnb li .gnb_2depth .gnb_2depth_left {
@@ -182,10 +187,33 @@
 }
 /* #wrap header #m_header_bg #m_nav .compare {position: absolute; right: 0; bottom:0;} */
 /* ================================================================================= header.on */
-#wrap header.on {background-color: #fff;}
+#wrap header.on {background-color: #fff; border-bottom: 1px solid #c3c3c3;}
 #wrap header.on h1 a {filter: invert();}
 #wrap header.on nav .gnb li > a {color:#000;}
 #wrap header.on #user_menu {filter: invert();}
 #wrap header nav .gnb:hover li > a {color: #888888;}
 #wrap header nav .gnb li:hover > a.active {color: #002D72; font-weight: 600;}
 /* ========================================================================= */
+#wrap footer {background-color: #00173A; padding: 70px 120px 50px 120px;}
+#wrap footer * {color: #fff;}
+#wrap footer .top_line {display: flex; flex-flow: row nowrap; gap:84px; margin-bottom: 94px;}
+#wrap footer .top_line dl {display: flex; flex-flow: column nowrap; gap:10px;}
+#wrap footer .top_line dl dt {font-weight: 600;}
+#wrap footer .top_line dl dd {}
+#wrap footer .top_line dl dd a {display: block;}
+#wrap footer .top_line .f_support {}
+#wrap footer .top_line .f_support dt {}
+#wrap footer .top_line .f_support dd {}
+#wrap footer .top_line .f_support dd a {}
+#wrap footer .top_line .f_policy {}
+#wrap footer .top_line .f_policy dt {}
+#wrap footer .top_line .f_policy dd {}
+#wrap footer .top_line .f_policy dd a {}
+#wrap footer .top_line .f_sns {display: flex; flex-flow: row wrap; gap:10px; align-content: flex-start;}
+#wrap footer .top_line .f_sns dt {width: 100%;}
+#wrap footer .top_line .f_sns dd {}
+#wrap footer .top_line .f_sns dd a {width: 14px; height: 14px; display: block; background-color: #fff;}
+#wrap footer .top_line .f_sn dd a img {width: 100%; height: 100%;}
+#wrap footer .btm_line {display: flex; flex-flow: row nowrap; align-items: flex-end; justify-content: space-between; gap:560px;}
+#wrap footer .btm_line p {font-size: 1.25rem; font-weight: 600; white-space: nowrap;}
+#wrap footer .btm_line address {font-size: 0.88rem; word-break:keep-all;}

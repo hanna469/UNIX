@@ -32,9 +32,25 @@
     * discover 작업중
 * js
     * style 슬라이드 완료
+# 26.04.10 (2:20 ~ 18:20 (4h))
+* html 일부 수정 (location p>button)
+* css
+    * location까지 까지 작업 완료
+    * style 슬라이드 크기 > 반응형 할 때 맞춰서 크기 재확인 후 재작업 예정
+* js
+    * location 까지 완료
 
 ## 참고사항
+* CSS
+    * `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`
+    * 글자 1줄로만 / 넘치는 글자 숨김 처리 / 넘친 글자 ...로 대체
 * JS
-    * parentNode 객체의 부모 찾을 때 사용
-    * renderFraction:function(){} 사용자 함수
-    * formatFractionCurrent: function(number){} 페이지번호에 0 붙일 때 사용
+    * `parentNode` 객체의 부모 찾을 때 사용
+    * `renderFraction:function(){}` 사용자 함수
+    * `formatFractionCurrent: function(number){}` 페이지번호에 0 붙일 때 사용
+    * `pagination:{el:,type: 'progressbar',}` 페이지번호 대신 선으로 표시할 때
+    * `forEach` : location 위치 보기 시 클래스 초기화를 위해 사용함
+        * 배열(또는 NodeList)에 담긴 요소들을 하나씩 처음부터 끝까지 꺼내서 특정 동작을 시키는 반복문
+        * 매개변수 순서: 배열명.forEach((요소, 번호) => { 실행할 코드 })에서 첫 번째는 실제 태그, 두 번째는 순서(0부터 시작)
+        * 특징 1. 멈출 수 없음: 중간에 멈추는 기능(break)이 없고 무조건 상자 바닥까지 다 확인해야 끝남
+        * 특징 2. 상자 전용: querySelectorAll로 가져온 뭉치나 [ ]로 만든 배열에만 사용 가능 (일반 변수에는 사용X)

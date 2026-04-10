@@ -29,8 +29,8 @@
 #wrap main .container .contents_wrap .product a {}
 #wrap main .container .contents_wrap .product a img {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .container .contents_wrap .product .product_txt {}
-#wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem;}
-#wrap main .container .contents_wrap .product .product_txt p {font-size: 0.75rem;}
+#wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#wrap main .container .contents_wrap .product .product_txt > p {font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap {font-size: 1rem; display: flex; gap:10px; align-items: center;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap .sale {color: #002D72; font-weight: 500;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap .cost {font-size: 0.75rem; color:#c3c3c3;}
@@ -68,7 +68,7 @@
 #wrap main .new .contents_wrap .product a {
     display: block; height: 300px;
     margin: 0 0 30px;}
-#wrap main .new .contents_wrap .product a img {}
+/* #wrap main .new .contents_wrap .product a img {object-fit: contain;} */
 #wrap main .new .contents_wrap .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
 #wrap main .new .contents_wrap .product .product_txt h1 {font-size: 0.94em; width:100%; margin-bottom: 15px;}
 #wrap main .new .contents_wrap .product .product_txt p {font-size: 0.69em;}
@@ -88,7 +88,7 @@
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .slide1 {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img {margin: 0 0 55px;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a {display:block; height: 430px; margin: 0 0 20px; }
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_im   g a {display:block; height: 430px; margin: 0 0 20px; }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a img {height:100%; width:100%; object-fit: cover;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img p {font-weight: 500; line-height: 1.5;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product {
@@ -108,7 +108,7 @@
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product a img {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt {position: relative;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt h1 {
-    width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 10px;}
+    width: 100%; margin-bottom: 10px;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt p {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product .product_txt .price_wrap {
     justify-content: flex-end; position: absolute; bottom:0; width:100%;}
@@ -178,7 +178,7 @@
 #wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
 #wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
 #wrap main .style .style_bg .style_right .style_list {max-width:848px; height: 256px;}
-#wrap main .style .style_bg .style_right .style_list .swiper-wrapper {}
+#wrap main .style .style_bg .style_right .style_list .swiper-wrapper {transition-timing-function: linear}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide a {}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .slide1 {background-image: url(../images/natural_s.jpg);}
@@ -192,30 +192,33 @@
 #wrap main .discover .title_wrap .title {}
 #wrap main .discover .title_wrap .all_view {}
 #wrap main .discover .title_wrap .all_view img {}
-#wrap main .discover .contents_wrap {}
+#wrap main .discover .contents_wrap {position: relative;}
 #wrap main .discover .contents_wrap .discover_list {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide {display: flex;}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo img {width: 100%;}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left h2 {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left p:last-child {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide {display: flex; gap:40px;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left {width: 50%; display: flex; flex-flow: column nowrap;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo {margin-bottom: 20px; flex:1;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left .top_photo img {width: 100%; height: 100%; object-fit: cover;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left h2 {font-size: 1.25rem; font-weight: 500; line-height: 1.5; margin-bottom: 10px;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left p:last-child {font-size: 0.94rem;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left h2,
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left p:last-child {text-align: center;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    display: grid; gap:30px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
 }
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {display: block; height: 294px; margin-bottom: 30px;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a img {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 p {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .sale {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .cost {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 .price_wrap .pay {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-end;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 {width: 100%; margin-bottom: 10px;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt p {width:30%;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt .price_wrap {width:max-content;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt .price_wrap .sale {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt .price_wrap .cost {}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt .price_wrap .pay {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product1 {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product2 {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product3 {}
@@ -223,3 +226,34 @@
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide1 {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide2 {}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .slide3 {}
+#wrap main .discover .contents_wrap .pg {
+    top:auto; bottom:-20px; width: 100%; height: 1px;
+}
+#wrap main .discover .contents_wrap .pg .swiper-pagination-progressbar-fill {background: #002D72;}
+/* ================================================================================================== location */
+#wrap main .location {}
+#wrap main .location .title {}
+#wrap main .location .contents {display: flex; flex-flow: row nowrap; gap:40px;}
+#wrap main .location .contents .contents_left {width:50%;}
+#wrap main .location .contents .contents_left .map_list {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    margin-bottom: 100px; position: relative;}
+#wrap main .location .contents .contents_left .map_list::after {
+    content: ''; display: block; width: 100%; height: 1px; background-color: #d9d9d9;
+    position: absolute; left:0; bottom: -50px;
+}
+#wrap main .location .contents .contents_left .map_list .list_left {}
+#wrap main .location .contents .contents_left .map_list .list_left h1 {font-weight: 500; line-height: 1.5; margin-bottom: 10px;}
+#wrap main .location .contents .contents_left .map_list .list_left p {font-size: 0.75rem;}
+#wrap main .location .contents .contents_left .map_list .list_left p:nth-child(2) {margin-bottom: 10px; display: flex; gap:5px; align-items: center;}
+#wrap main .location .contents .contents_left .map_list .list_left p:nth-child(2) img {width: 16px; height: 16px;}
+#wrap main .location .contents .contents_left .map_list .list_left .list_left .visitor {}
+#wrap main .location .contents .contents_left .map_list .show_loc {display: flex; align-items: center; gap:15px; padding: 5px 10px; border:1px solid #002D72;}
+#wrap main .location .contents .contents_left .map_list .show_loc img {width: 16px; height: 16px;}
+#wrap main .location .contents .contents_left .map_list .show_loc.active {background-color: #002D72; color:#fff;}
+#wrap main .location .contents .contents_left .map_list .show_loc.active img {filter: invert();}
+#wrap main .location .contents .contents_left .list1 {}
+#wrap main .location .contents .contents_left .list2 {}
+#wrap main .location .contents .contents_left .list3 {}
+#wrap main .location .contents .contents_right {width:50%;}
+#wrap main .location .contents .contents_right iframe {width: 100%;}
