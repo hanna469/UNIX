@@ -59,7 +59,7 @@
     max-width: 1680px;
     gap: 60px;
 }
-#wrap main .new .contents_wrap .product {display: flex; flex-flow: column nowrap; position: relative;}
+#wrap main .new .contents_wrap .product {display: flex; flex-flow: column nowrap; position: relative; flex:1; min-width: 0;}
 #wrap main .new .contents_wrap .product:not(:last-child)::after {
     content: ''; background-color: #d9d9d9;
     width: 1px; height: 100%; display: block;
@@ -70,8 +70,9 @@
     margin: 0 0 30px;}
 /* #wrap main .new .contents_wrap .product a img {object-fit: contain;} */
 #wrap main .new .contents_wrap .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
-#wrap main .new .contents_wrap .product .product_txt h1 {font-size: 0.94em; width:100%; margin-bottom: 15px;}
-#wrap main .new .contents_wrap .product .product_txt p {font-size: 0.69em;}
+#wrap main .new .contents_wrap .product .product_txt h1 {width:100%; margin-bottom: 15px;}
+#wrap main .new .contents_wrap .product .product_txt p:nth-child(2) {width: 100px;}
+#wrap main .new .contents_wrap .product .product_txt p {}
 #wrap main .new .contents_wrap .product .product_txt .price_wrap {}
 #wrap main .new .contents_wrap .product .product_txt .price_wrap .sale {}
 #wrap main .new .contents_wrap .product .product_txt .price_wrap .cost {}
@@ -151,8 +152,6 @@
     background-position: center; background-size: cover;
     position: relative;
     display: flex; gap:82px; justify-content: center; align-items: center;
-    
-    /* height: max-content; */
 }
 #wrap main .style .style_bg::before {
     content: ''; display: block; width: 100%; height: 100%;
@@ -162,14 +161,13 @@
 #wrap main .style .style_bg .left_photo {
     display: block;
     width: 100%; height: 100%;
-    flex:1;
     background-image: url(../images/style_box.jpg);
     background-position: center; background-size: cover;
 }
 #wrap main .style .style_bg .left_photo,
 #wrap main .style .style_bg .style_right {position: relative; z-index: 200;}
-#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: space-between; gap:78px;}
-#wrap main .style .style_bg .style_right .style_txt {margin-top: 130px;}
+#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: flex-end; gap:78px; height: 100%;}
+#wrap main .style .style_bg .style_right .style_txt {}
 #wrap main .style .style_bg .style_right .style_txt > * {color:#fff; }
 #wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
 #wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 700; line-height: 1.5; margin: 0 0 50px;}
@@ -177,7 +175,7 @@
 #wrap main .style .style_bg .style_right .style_txt .find_style {}
 #wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
 #wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
-#wrap main .style .style_bg .style_right .style_list {max-width:848px; height: 256px;}
+#wrap main .style .style_bg .style_right .style_list {width:848px; height: 256px;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper {transition-timing-function: linear}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide a {}

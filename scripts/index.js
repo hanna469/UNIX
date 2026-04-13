@@ -33,16 +33,30 @@ const disSwiper = new Swiper(dislist,{ //디스커버 슬라이드
 
 const styleSwiper = new Swiper(styleList,{ //스타일 슬라이드
     loop:true,
-    slidesPerView:3,
+    slidesPerView:2.5,
     spaceBetween:40,
     autoplay:{delay:0,},
     speed:4000,
+    breakpoints:{
+        1440: {
+            slidesPerView:3,
+        },
+    }
 })
 
 const bestSwiper = new Swiper(bestBnr,{ //베스트 슬라이드
     loop:true,
-    slidesPerView:3,
-    spaceBetween: 84,
+    slidesPerView:1,
+    breakpoints:{
+        840: {slidesPerView:2,
+            spaceBetween: 30,
+        },
+        1240: {
+            slidesPerView:3,
+            spaceBetween: 30,
+        },
+    },
+    
     autoplay:{delay:3000,},
     navigation:{
         nextEl:'.best_list ~ .next',
