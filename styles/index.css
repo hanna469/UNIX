@@ -147,11 +147,11 @@
 #wrap main .style {margin: 200px 0;}
 #wrap main .style .title {margin: 0 120px 20px;}
 #wrap main .style .style_bg {
-    height: 839px; padding: 59px 50px;
+    min-height: 839px; padding: 59px 50px;
     background-image: url(../images/style_blur.jpg); background-attachment: fixed;
     background-position: center; background-size: cover;
     position: relative;
-    display: flex; gap:82px; justify-content: center; align-items: center;
+    display: flex; gap:5%; justify-content: center; align-items: center;
 }
 #wrap main .style .style_bg::before {
     content: ''; display: block; width: 100%; height: 100%;
@@ -160,13 +160,16 @@
 }
 #wrap main .style .style_bg .left_photo {
     display: block;
-    width: 100%; height: 100%;
+    flex: 1;
+    min-width: 0;
+    max-width: 736px;
+    height: 600px;
     background-image: url(../images/style_box.jpg);
     background-position: center; background-size: cover;
 }
 #wrap main .style .style_bg .left_photo,
 #wrap main .style .style_bg .style_right {position: relative; z-index: 200;}
-#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: flex-end; gap:78px; height: 100%;}
+#wrap main .style .style_bg .style_right {display: flex; flex-flow: column nowrap; justify-content: flex-end; gap:78px; min-width: 0; flex:1.2; height: 600px;}
 #wrap main .style .style_bg .style_right .style_txt {}
 #wrap main .style .style_bg .style_right .style_txt > * {color:#fff; }
 #wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
@@ -175,7 +178,7 @@
 #wrap main .style .style_bg .style_right .style_txt .find_style {}
 #wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
 #wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
-#wrap main .style .style_bg .style_right .style_list {width:848px; height: 256px;}
+#wrap main .style .style_bg .style_right .style_list {width:100%; max-width: 848px; height:256px;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper {transition-timing-function: linear}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper .swiper-slide a {}

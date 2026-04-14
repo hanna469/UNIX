@@ -12,7 +12,21 @@ const mNavClose = mHeaderBg.querySelector('.close');
 
 const topBnrSwiper = new Swiper(topBnr,{ //띠배너 슬라이드
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
+    breakpoints:{
+        500:{
+            slidesPerView:1.5,
+        },
+        800:{
+            slidesPerView:2,
+        },
+        1000:{
+            slidesPerView:2.5,
+        },
+        1240:{
+            slidesPerView:3,
+        },
+    },
     autoplay:{delay:0,},
     speed:8000,
 })

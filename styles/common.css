@@ -1,4 +1,4 @@
-#wrap {min-width: 320px;}
+#wrap {min-width: 390px;}
 /* header */
 /* ============================== top_bnr(띠배너) */
 #wrap .top_bnr {
@@ -9,7 +9,7 @@
 #wrap .top_bnr .topbnr_txt {width: calc(100% - 200px);}
 #wrap .top_bnr .topbnr_txt .swiper-wrapper {transition-timing-function: linear}
 #wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide {}
-#wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide {width: max-content;}
+#wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide {}
 #wrap .top_bnr .topbnr_txt .swiper-wrapper .swiper-slide .top_txt {color:#fff; font-size: 0.75rem; line-height: 35px;}
 #wrap .top_bnr .close {width:35px; position:absolute; right:0; top:50%; transform: translateY(-48%); height: 100%;}
 #wrap .top_bnr .close img {width: 100%;}
