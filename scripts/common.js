@@ -7,8 +7,45 @@ const mHeaderBg = document.querySelector('#m_header_bg'); // 모바일용 헤더
 const mNav = mHeaderBg.querySelector('#m_nav'); // 모바일용 헤더
 const gnbUl = document.querySelector('nav .gnb'); 
 const gnbClone = gnbUl.cloneNode(true); //gnbUl 복제
+mNav.appendChild(gnbClone); //mNav 자식으로 gnbClone 삽입
 const mNavOpen = document.querySelector('#user_menu .m_nav_open'); //모바일 메뉴 열기
 const mNavClose = mHeaderBg.querySelector('.close');
+const mGnbOpen = document.querySelectorAll('#m_nav .gnb li'); //모바일 메뉴 gnb
+console.log(mGnbOpen);
+
+
+// mGnbOpen.forEach((i) => {
+//     const mSubMenu = i.querySelector('.gnb_2depth');
+//     const mLnb = i.querySelector('a');
+//     mLnb.addEventListener('click',function(e){
+//         if (mSubMenu){
+//             e.preventDefault();
+//             mSubMenu.classList.toggle('on');}
+//         })
+// })
+// mGnbOpen.forEach((i) => {
+//     const mSubMenu = i.querySelector('.gnb_2depth');
+//     const mLnb = i.querySelector('a');
+//     mLnb.addEventListener('click',function(e){
+//         if(mSubMenu.style.display == 'none' || mSubMenu.style.display == ''){
+//             e.preventDefault();
+//             mSubMenu.style.display = 'flex';
+//         } else {
+//             e.preventDefault();
+//             mSubMenu.style.display = 'none';
+//         }
+//     })
+// })
+for(let i=0;mGnbOpen.length;i++){
+    const mSubMenu = mGnbOpen[i].querySelector('.gnb_2depth');
+    const mLnb = mGnbOpen[i].querySelector('a');
+    mLnb.addEventListener('click',function(e){
+        e.preventDefault();
+        mSubMenu.style.display='none';
+        
+    })
+
+}
 
 const topBnrSwiper = new Swiper(topBnr,{ //띠배너 슬라이드
     loop: true,
@@ -33,14 +70,12 @@ const topBnrSwiper = new Swiper(topBnr,{ //띠배너 슬라이드
 
 mNavOpen.addEventListener('click', function(){ //모바일 메뉴 열기
     header.classList.add('on','open'); //마우스오버,스크롤 상황에서 스타일 유지하도록 모바일 클래스 추가
-    mHeaderBg.style.display = 'block';
+    mHeaderBg.style.height = 100+'vh';
 })
 mNavClose.addEventListener('click',function(){ //모바일 메뉴 닫기
     mHeaderBg.style.display = 'none';
     header.classList.remove('open');
 })
-
-mNav.appendChild(gnbClone); //mNav 자식으로 gnbClone 삽입
 
 fabTopBtn.addEventListener('click',function(e){ //플로팅버튼-맨 위로 가기
     e.preventDefault();
