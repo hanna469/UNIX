@@ -14,38 +14,22 @@ const mGnbOpen = document.querySelectorAll('#m_nav .gnb li'); //모바일 메뉴
 console.log(mGnbOpen);
 
 
-// mGnbOpen.forEach((i) => {
-//     const mSubMenu = i.querySelector('.gnb_2depth');
-//     const mLnb = i.querySelector('a');
-//     mLnb.addEventListener('click',function(e){
-//         if (mSubMenu){
-//             e.preventDefault();
-//             mSubMenu.classList.toggle('on');}
-//         })
-// })
-// mGnbOpen.forEach((i) => {
-//     const mSubMenu = i.querySelector('.gnb_2depth');
-//     const mLnb = i.querySelector('a');
-//     mLnb.addEventListener('click',function(e){
-//         if(mSubMenu.style.display == 'none' || mSubMenu.style.display == ''){
-//             e.preventDefault();
-//             mSubMenu.style.display = 'flex';
-//         } else {
-//             e.preventDefault();
-//             mSubMenu.style.display = 'none';
-//         }
-//     })
-// })
-for(let i=0;mGnbOpen.length;i++){
-    const mSubMenu = mGnbOpen[i].querySelector('.gnb_2depth');
-    const mLnb = mGnbOpen[i].querySelector('a');
+mGnbOpen.forEach((i) => {
+    const mSubMenu = i.querySelector('.gnb_2depth');
+    const mLnb = i.querySelector('a');
     mLnb.addEventListener('click',function(e){
-        e.preventDefault();
-        mSubMenu.style.display='none';
-        
+        if (window.innerWidth <= 819){
+            if(mSubMenu.style.display == 'none' || mSubMenu.style.display == ''){
+                e.preventDefault();
+                mSubMenu.style.display = 'flex';
+            } else {
+                e.preventDefault();
+                mSubMenu.style.display = 'none';
+            }
+        }
     })
+})
 
-}
 
 const topBnrSwiper = new Swiper(topBnr,{ //띠배너 슬라이드
     loop: true,

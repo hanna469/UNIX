@@ -129,10 +129,17 @@
     #wrap footer {padding: 30px 15px 20px 15px;}
     #wrap footer .btm_line {flex-flow: column nowrap;gap:10px;}
     #wrap footer .btm_line address {width:100%;}
+    /* 히어로배너 */
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt p {font-size: 0.88rem;}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt h1 {font-size: 1.50rem;}
+    #wrap main .hero_wrap .hero_bnr .pg {width:calc(100% - 250px);}
+
 }
 @media screen and (max-width:513px){
     /* 띠배너 */
     #wrap .top_bnr .topbnr_txt {width: 100%; margin: 0 30px 0 20px;}
+    /* 히어로배너 */
+    #wrap main .hero_wrap .hero_bnr .pg {width:calc(100% - 150px);}
     /* 상품 */
     #wrap main .new .contents_wrap .product a {height: 147px;}
     /* #wrap main .container .contents_wrap .product .product_txt h1 {text-align: right;} */
