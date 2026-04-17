@@ -67,7 +67,7 @@
     #wrap header #m_header_bg #m_nav .gnb .gnb_pro {margin: 0 0 50px 0; align-items: flex-start;}
     #wrap header #m_header_bg #m_nav .gnb .gnb_pro::after {bottom:-25px;}
     #wrap header #m_header_bg #m_nav .gnb li > a {line-height: 1;}
-    #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth {display: none;}
+    #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth {height: 0; overflow: hidden;}
     #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth.on {display: flex;}
     #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl {flex-flow: column nowrap;}
     #wrap header #m_header_bg #m_nav .compare {bottom:-3px;}
