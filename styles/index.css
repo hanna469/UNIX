@@ -175,8 +175,13 @@
 #wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
 #wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 600; line-height: 1.5; margin: 0 0 50px; font-family: 'Escoredream', 'pretendard', sans-serif;}
 #wrap main .style .style_bg .style_right .style_txt p:nth-child(3) {font-size: 1.25rem; margin: 0 0 50px;}
-#wrap main .style .style_bg .style_right .style_txt .find_style {}
-#wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
+#wrap main .style .style_bg .style_right .style_txt .find_style {width: max-content; color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px; position: relative;}
+#wrap main .style .style_bg .style_right .style_txt .find_style::after {
+    content:''; display: block; width:0; height: 1px; background-color: #fff;
+    position: absolute; left:0; bottom:-5px;
+    transition: width 0.3s;
+}
+#wrap main .style .style_bg .style_right .style_txt .find_style:hover::after {width: 100%;}
 #wrap main .style .style_bg .style_right .style_txt .find_style img {width: 16px;}
 #wrap main .style .style_bg .style_right .style_list {width:100%; max-width: 848px; height:256px;}
 #wrap main .style .style_bg .style_right .style_list .swiper-wrapper {transition-timing-function: linear}
