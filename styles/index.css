@@ -26,7 +26,8 @@
 #wrap main .container .all_view img {width:16px;}
 #wrap main .container .contents_wrap {}
 #wrap main .container .contents_wrap .product {}
-#wrap main .container .contents_wrap .product a {}
+#wrap main .container .contents_wrap .product a {overflow: hidden;}
+#wrap main .container .contents_wrap .product a:hover img {transform: scale(1.2);}
 #wrap main .container .contents_wrap .product a img {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .container .contents_wrap .product .product_txt {}
 #wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
@@ -101,7 +102,7 @@
     border: #f00;
 }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product:not(:last-child)::after {
-    content: ''; width: 504px; height: 1px; background-color: #d9d9d9;
+    content: ''; width: 100%; height: 1px; background-color: #d9d9d9;
     position: absolute; left:0; bottom:-30px;
 }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product1 {}
@@ -216,9 +217,9 @@
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
 }
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {display: block; height: 294px; margin-bottom: 30px;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {display: block; height: 294px; margin-bottom: 20px;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a img {}
-#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-end;}
+#wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt h1 {width: 100%; margin-bottom: 10px;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt p {width:30%;}
 #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt .price_wrap {width:max-content;}

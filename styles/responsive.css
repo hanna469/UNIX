@@ -113,6 +113,8 @@
         font-size: 1rem; font-weight: 500; line-height: 1.5; margin-bottom: 10px;
     }
     #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_left p:last-child {font-size: 0.88rem;}
+    #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product a {margin-bottom: 10px;}
+    #wrap main .discover .contents_wrap .discover_list .swiper-wrapper .swiper-slide .contents_right .product .product_txt {justify-content: flex-end; gap:5%;}
     /* 지도 */
     #wrap main .location .contents .contents_left {width:100%;}
     #wrap main .location .contents .contents_left .map_list .list_left {}
