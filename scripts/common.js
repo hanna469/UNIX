@@ -81,8 +81,8 @@ mNavOpen.addEventListener('click', function(e){ //모바일 메뉴 열기
 mNavClose.addEventListener('click',function(e){ //모바일 메뉴 닫기
     e.preventDefault();
     mHeaderBg.style.height = 0;
+    mLnbHide();
     header.classList.remove('open');
-
 })
 
 fabTopBtn.addEventListener('click',function(e){ //플로팅버튼-맨 위로 가기
