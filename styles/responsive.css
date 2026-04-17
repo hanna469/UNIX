@@ -72,6 +72,9 @@
     #wrap header #m_header_bg #m_nav .gnb li .gnb_2depth .gnb_2depth_left dl {flex-flow: column nowrap;}
     #wrap header #m_header_bg #m_nav .compare {bottom:-3px;}
     /* 플로팅버튼 */
+    #wrap .fab_btn {
+    right:33px; bottom:52px;
+}
     #wrap .fab_btn button {width:35px; height:35px; border-radius: 35px; box-shadow: 0 2px 6px rgba(0,0,0,0.25);}
     #wrap .fab_btn .top_btn {padding: 7px;}
     #wrap .fab_btn .talk_btn {padding: 1px 7px 1px 5px;}

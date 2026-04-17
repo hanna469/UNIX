@@ -23,8 +23,8 @@ locBtn.forEach((i,num) => { //i,num 매개변수 생성. i=각각의 내용, num
 
 const disSwiper = new Swiper(dislist,{ //디스커버 슬라이드
     loop:true,
-    // autoplay:{delay:3000,},
-    speed:2000,
+    autoplay:{delay:3000,},
+    speed:1000,
     pagination:{
         el: '.discover_list + .pg',
         type: 'progressbar',

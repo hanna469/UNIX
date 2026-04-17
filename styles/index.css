@@ -21,7 +21,7 @@
     margin: 0 0 20px ;
     display: flex; justify-content: space-between;
 }
-#wrap main .container .title {font-size: 2.5rem; margin: 0 0 20px;}
+#wrap main .container .title {font-size: 2.5rem; margin: 0 0 20px; font-family: 'Escoredream','pretendard',sans-serif; font-weight: 600;}
 #wrap main .container .all_view {font-size: 0.94rem; display: flex; align-items: center; gap:15px;}
 #wrap main .container .all_view img {width:16px;}
 #wrap main .container .contents_wrap {}
@@ -89,7 +89,7 @@
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .slide1 {}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img {margin: 0 0 55px;}
-#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_im   g a {display:block; height: 430px; margin: 0 0 20px; }
+#wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a {display:block; height: 430px; margin: 0 0 20px; }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img a img {height:100%; width:100%; object-fit: cover;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .best_img p {font-weight: 500; line-height: 1.5;}
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product {
@@ -141,7 +141,7 @@
 #wrap main .brand .brand_bnr video {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .brand .brand_bnr .brand_txt {position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
 #wrap main .brand .brand_bnr .brand_txt > * {color: #fff; text-align: center;}
-#wrap main .brand .brand_bnr .brand_txt h1 {font-size: 1.75rem; font-weight: 700;}
+#wrap main .brand .brand_bnr .brand_txt h1 {font-size: 1.75rem; font-weight: 600; font-family: 'Escoredream', 'pretendard', sans-serif;;}
 #wrap main .brand .brand_bnr .brand_txt p {font-size: 1.25rem; font-weight: 500;}
 /* ================================================================== stylr library */
 #wrap main .style {margin: 200px 0;}
@@ -173,7 +173,7 @@
 #wrap main .style .style_bg .style_right .style_txt {}
 #wrap main .style .style_bg .style_right .style_txt > * {color:#fff; }
 #wrap main .style .style_bg .style_right .style_txt .style_title {font-size: 1.63rem; font-weight: 500; line-height: 1.5;}
-#wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 700; line-height: 1.5; margin: 0 0 50px;}
+#wrap main .style .style_bg .style_right .style_txt h1 {color:#fff; font-size: 1.75rem; font-weight: 600; line-height: 1.5; margin: 0 0 50px; font-family: 'Escoredream', 'pretendard', sans-serif;}
 #wrap main .style .style_bg .style_right .style_txt p:nth-child(3) {font-size: 1.25rem; margin: 0 0 50px;}
 #wrap main .style .style_bg .style_right .style_txt .find_style {}
 #wrap main .style .style_bg .style_right .style_txt .find_style {color:#fff; font-weight: 500; display: flex; align-items: center; gap:20px;}
