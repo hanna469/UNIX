@@ -1,3 +1,11 @@
+/**
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+ * PROJECT: Portfolio Prototype
+ * WARNING: This script does not process real transactions or user credentials.
+ * All functions are for demonstration purposes only.
+ */
+
 const heroBnr = document.querySelector('.hero_bnr'); //히어로배너슬라이드
 const bestBnr = document.querySelector('.best_list'); //베스트탭슬라이드
 const styleList = document.querySelector('.style_list'); //스타일탭슬라이드
