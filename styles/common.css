@@ -84,6 +84,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
     display: block; height: 30px; line-height: 30px;
     white-space: nowrap; /* 글자가 절대 줄바꿈 되지 않게 함 */
 }
+#wrap header nav .gnb li .gnb_2depth .gnb_2depth_left dl dd:hover a {font-weight: 600; color: #002D72;}
 #wrap header nav .gnb li .gnb_2depth .gnb_2depth_left .compare {
     display: block;
     margin: auto 0 20px 120px; /* 아래쪽 여백도 위쪽과 대칭되게 조정 */
