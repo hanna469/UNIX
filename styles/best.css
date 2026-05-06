@@ -1,0 +1,40 @@
+#wrap {}
+#wrap main .best_bnr {width: 100%; overflow: hidden; height: 70vh;}
+#wrap main .best_bnr img {width: 100%; object-fit: cover; object-position: top center;}
+#wrap main .best_container {}
+#wrap main .best_container .best_txt {display: flex; gap:20px; align-items: flex-end; max-width: 1680px; margin: 100px 120px 20px;}
+#wrap main .best_container .best_txt h1 {font-size: 2.5rem; font-family: 'Escoredream', 'pretendard', sans-serif;}
+#wrap main .best_container .best_txt ul {display: flex; gap:10px; align-items: flex-end;}
+#wrap main .best_container .best_txt ul li {}
+#wrap main .best_container .best_txt ul li a {font-weight: 500;}
+#wrap main .best_container .best_txt ul li.active {position: relative;}
+#wrap main .best_container .best_txt ul li.active a {font-size: 1.25rem; color: #002D72; font-weight: 600;}
+#wrap main .best_container .best_txt ul li.active::after {
+    content: ''; display: block; background-color: #002D72; width: 100%; height: 1px;
+    position: absolute; left:0; bottom: -5px;
+}
+#wrap main .best_container .best_product_wrap {margin: 0 120px; max-width: 1680px; display: flex; flex-flow: row wrap; gap:20px}
+#wrap main .best_container .best_product_wrap .filter {width: 100%; text-align: right;}
+#wrap main .best_container .best_product_wrap .filter img {width: 16px; height: 16px; margin-right: 7px;}
+#wrap main .best_container .best_product_wrap .product {display: flex; flex-flow: row wrap; position: relative; width: calc((100% - 40px) / 3);}
+#wrap main .best_container .best_product_wrap .product a {
+    display: block;
+    margin: 0 0 30px; overflow: hidden;
+}
+#wrap main .best_container .best_product_wrap .product a:hover img {transform: scale(1.2);}
+#wrap main .best_container .best_product_wrap .product a img {width: 100%; height: 100%; object-fit: cover;}
+#wrap main .best_container .best_product_wrap .product .product_txt {display: flex; flex-flow: row wrap; justify-content: space-between;}
+#wrap main .best_container .best_product_wrap .product .product_txt > * {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#wrap main .best_container .best_product_wrap .product .product_txt h1 {width:100%; margin-bottom: 15px; font-size: 0.94rem;}
+#wrap main .best_container .best_product_wrap .product .product_txt p:nth-child(2) {width: 100px;}
+#wrap main .best_container .best_product_wrap .product .product_txt p {font-size: 0.75rem;}
+#wrap main .best_container .best_product_wrap .product .product_txt .price_wrap {font-size: 1rem; display: flex; gap:10px; align-items: center;}
+#wrap main .best_container .best_product_wrap .product .product_txt .price_wrap .sale {color: #002D72; font-weight: 500;}
+#wrap main .best_container .best_product_wrap .product .product_txt .price_wrap .cost {font-size: 0.75rem; color:#c3c3c3;}
+#wrap main .best_container .best_product_wrap .product .product_txt .price_wrap .pay {font-weight: 500;}
+#wrap main .best_container .best_product_wrap .page {margin: 40px 0; display: flex; align-items: center; gap:15px; justify-content: center; width: 100%;}
+#wrap main .best_container .best_product_wrap .page a {width: 16px; height: 16px;}
+#wrap main .best_container .best_product_wrap .page a.page_prev {}
+#wrap main .best_container .best_product_wrap .page a.page_prev img {transform: rotate(180deg); width: 100%;}
+#wrap main .best_container .best_product_wrap .page a.page_next {}
+#wrap main .best_container .best_product_wrap .page a.page_next img {width: 100%;}

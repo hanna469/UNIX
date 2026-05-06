@@ -1,0 +1,40 @@
+#wrap {}
+#wrap header {}
+#wrap main {margin-top: 90px;}
+#wrap main .product_top {display: flex; gap:60px; justify-content: center;}
+#wrap main .product_top .p_top_left {display: grid; grid-template-columns: 0.3fr 0.7fr; grid-template-rows: repeat(3, 1fr); height: 600px;}
+#wrap main .product_top .p_top_left .preview {width: 100%; height: 100%; overflow: hidden;}
+#wrap main .product_top .p_top_left .preview img {width: 100%; height: 100%; object-fit: cover;}
+#wrap main .product_top .p_top_left .preview1 {}
+#wrap main .product_top .p_top_left .preview2 {}
+#wrap main .product_top .p_top_left .preview3 {}
+#wrap main .product_top .p_top_left .preview4 {grid-column: 2; grid-row: 1/4;}
+#wrap main .product_top .p_top_right {}
+#wrap main .product_top .p_top_right .product_txt {}
+#wrap main .product_top .p_top_right .product_txt h1 {}
+#wrap main .product_top .p_top_right .product_txt p {}
+#wrap main .product_top .p_top_right .product_txt .price_wrap {}
+#wrap main .product_top .p_top_right .product_txt .price_wrap .sale {}
+#wrap main .product_top .p_top_right .product_txt .price_wrap .cost {}
+#wrap main .product_top .p_top_right .product_txt .price_wrap .pay {}
+#wrap main .product_top .p_top_right .option {}
+#wrap main .product_top .p_top_right .option .option_txt {}
+#wrap main .product_top .p_top_right .option .option_btn {}
+#wrap main .product_top .p_top_right .option .option_btn.active {}
+#wrap main .product_top .p_top_right .delivery {}
+#wrap main .product_top .p_top_right .delivery p {}
+#wrap main .product_top .p_top_right .total {}
+#wrap main .product_top .p_top_right .total p {}
+#wrap main .product_top .p_top_right .total p span{}
+#wrap main .product_top .p_top_right .order_btn {}
+#wrap main .product_top .p_top_right .order_btn .buy_btn {}
+#wrap main .product_top .p_top_right .order_btn .cart_btn {}
+#wrap main .product_top .p_top_right .related_product {}
+#wrap main .product_top .p_top_right .related_product p {}
+#wrap main .product_top .p_top_right .related_product a {}
+#wrap main .product_top .p_top_right .related_product a img {}
+#wrap main .product_mid {}
+#wrap main .product_mid a {}
+#wrap main .product_mid a.active {}
+#wrap main .product_btm {}
+#wrap main .product_btm img {}

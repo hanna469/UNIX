@@ -9,8 +9,9 @@
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a {display: block; height:100%;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt{position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
-#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt p {color: #fff; font-weight: 500; line-height: 1.2; text-align: right;}
-#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt h1 {color: #fff; font-size: 2.38rem; font-weight: 700; line-height: 1.3; text-align: center;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt > * {color: #fff;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt p {font-weight: 500; line-height: 1.2; text-align: right;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a .hero_txt h1 {font-size: 2.38rem; font-weight: 700; line-height: 1.3; text-align: center;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr1_.jpg);}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/hero_bnr2_.jpg);}
 #wrap main .hero_wrap .hero_bnr .pg {bottom:38px; top:auto; width:calc(100% - 500px); left:50%; transform: translateX(-50%); background-color: rgba(255,255,255,0.4); height:2px;}
@@ -30,8 +31,9 @@
 #wrap main .container .contents_wrap .product a:hover img {transform: scale(1.2);}
 #wrap main .container .contents_wrap .product a img {width: 100%; height: 100%; object-fit: cover;}
 #wrap main .container .contents_wrap .product .product_txt {}
-#wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#wrap main .container .contents_wrap .product .product_txt > p {font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#wrap main .container .contents_wrap .product .product_txt > * {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#wrap main .container .contents_wrap .product .product_txt h1 {font-size: 0.94rem;}
+#wrap main .container .contents_wrap .product .product_txt > p {font-size: 0.75rem;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap {font-size: 1rem; display: flex; gap:10px; align-items: center;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap .sale {color: #002D72; font-weight: 500;}
 #wrap main .container .contents_wrap .product .product_txt .price_wrap .cost {font-size: 0.75rem; color:#c3c3c3;}
@@ -99,7 +101,6 @@
     gap:20px;
     margin: 0 0 60px;
     position: relative;
-    border: #f00;
 }
 #wrap main .best .contents_wrap .best_list .swiper-wrapper .swiper-slide .product:not(:last-child)::after {
     content: ''; width: 100%; height: 1px; background-color: #d9d9d9;
